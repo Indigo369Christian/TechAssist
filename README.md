@@ -8,3 +8,7 @@ Enthält Businessplan, One-Pager, Branding & Präsentationsmaterial.
 - 04_Praesentation/ … (Mappe, MasterTemplate)
 - 06_SocialMedia/ … (Templates)
 - 99_Archiv/Backups/ … (ZIPs)
+
+## Status
+![Release](https://img.shields.io/github/v/release/Indigo369Christian/TechAssist?display_name=tag)
+![Tags](https://img.shields.io/github/tag/Indigo369Christian/TechAssist.svg)
