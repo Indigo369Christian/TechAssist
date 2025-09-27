@@ -1,0 +1,5 @@
+*.pdf binary
+*.pptx binary
+*.potx binary
+*.zip binary
+*.savedSearch text eol=lf
