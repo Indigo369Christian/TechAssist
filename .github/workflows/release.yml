@@ -1,0 +1,20 @@
+name: Release on tag
+on:
+  push:
+    tags: ['v*']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ZIP
+        run: |
+          cd ..
+          zip -r TechAssist_${{ github.ref_name }}.zip TechAssist \
+            -x "TechAssist/_logs/*" "TechAssist/.git/*" "TechAssist/00_Tags/*"
+      - name: Attach ZIP to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ../TechAssist_${{ github.ref_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
